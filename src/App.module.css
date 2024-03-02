@@ -1,0 +1,10 @@
+.mainbg {
+  background-image: url(./assets/images/luckybg.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+.highlightbg {
+  background-image: url(./assets/images/highlight.svg);
+  background-size: 100% 100%;
+  background-position: center;
+}
