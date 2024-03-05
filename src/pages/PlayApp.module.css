@@ -1,0 +1,10 @@
+.mainBackground {
+  background-image: url(../assets/luckybg.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+.highlightBackground {
+  background-image: url(../assets/highlight.png);
+  background-size: contain;
+  background-position: center;
+}

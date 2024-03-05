@@ -1,12 +1,22 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import spinbtn1 from '../assets/images/btn-1.svg';
-import spinbtn2 from '../assets/images/btn-2.svg';
+import SpinBtn1 from '../assets/btn-1.png';
+import SpinBtn2 from '../assets/btn-2.png';
 
-function SpinBtn() {
+function SpinBtn({ onClick, disabled }) {
   return (
-    <button type="button" aria-label="spin">
-      <img src={spinbtn1} alt="spin-btn1" className="w-60 xl:w-80 " />
-      <img src={spinbtn2} alt="spin-btn2" className="w-60 xl:w-80 hidden" />
+    <button
+      type="button"
+      aria-label="spin"
+      onClick={onClick}
+      disabled={disabled}
+      className=""
+    >
+      {!disabled ? (
+        <img src={SpinBtn1} alt="spin-btn1" className="w-60 xl:w-80 " />
+      ) : (
+        <img src={SpinBtn2} alt="spin-btn2" className="w-60 xl:w-80 " />
+      )}
     </button>
   );
 }
